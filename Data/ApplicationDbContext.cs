@@ -1,17 +1,6 @@
-﻿//using System;
-//namespace predictionService.Data
-//{
-//	public class ApplicationDbContext
-//	{
-//		public ApplicationDbContext()
-//		{
-//		}
-//	}
-//}
-
-
-using predictionService;
+﻿using predictionService;
 using Microsoft.EntityFrameworkCore;
+using predictionService.Entities;
 
 public class ApplicationDbContext : DbContext
 {
@@ -20,6 +9,7 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<WeatherForecast> WeatherForecasts { get; set; }
+    public DbSet<PredictionModel> Predictions { get; set; }
 }
 
 

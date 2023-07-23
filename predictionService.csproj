@@ -17,12 +17,19 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Data\" />
+    <None Remove="Entities\" />
+    <None Remove="Services\" />
+    <None Remove="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Services\" />
+    <Folder Include="DTO\" />
   </ItemGroup>
 </Project>
